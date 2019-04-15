@@ -5,7 +5,7 @@ public class movment : MonoBehaviour
     public Rigidbody r;
     
     public float ff = 2000f;
-    public float sf = 500f;
+    public float sf =100f;
     public Vector3 s;
    
 
