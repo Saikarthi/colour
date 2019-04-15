@@ -8,7 +8,7 @@ public class endless : MonoBehaviour
     public Transform playertranfrom;
     private float spawnZ = 0.0f;
     private float tilelength = 50.63f;
-   private int amttiles =1; 
+   private int amttiles =3; 
 
     void Start()
     {
