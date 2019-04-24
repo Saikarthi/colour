@@ -7,6 +7,12 @@ TagManager:
   - player
   - tr
   - obj
+  - r
+  - b
+  - g
+  - bp
+  - rp
+  - gp
   layers:
   - Default
   - TransparentFX
