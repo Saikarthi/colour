@@ -11,7 +11,8 @@ public class col : MonoBehaviour
     
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.collider.tag == "r"|| collision.collider.tag == "b"|| collision.collider.tag == "g") {
+        if (collision.collider.tag == "r")
+        {   
             d.enabled = false;
             
            
@@ -19,6 +20,25 @@ public class col : MonoBehaviour
 
 
         }
+        if (collision.collider.tag == "b")
+        {
+            d.enabled = false;
+
+
+            Invoke("re", 2f);
+
+
+        }
+        if (collision.collider.tag == "g")
+        {
+            d.enabled = false;
+
+
+            Invoke("re", 2f);
+
+
+        }
+    
        
     }
     public void re()
