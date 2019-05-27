@@ -6,14 +6,19 @@ using UnityEngine.UI;
 public class score : MonoBehaviour
 {
     public Text a;
+    public int s;
+    
     void Start()
     {
         a.text = 100.ToString();
+        
     }
 
     
     void Update()
     {
         
+       
     }
+    
 }

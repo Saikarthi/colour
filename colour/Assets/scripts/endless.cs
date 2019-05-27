@@ -7,7 +7,7 @@ public class endless : MonoBehaviour
     public GameObject[] tileprefab;
     public Transform playertranfrom;
     private float spawnZ = 0.0f;
-    private float tilelength = 50.63f;
+    private float tilelength = 50f;
    private int amttiles = 7;
     private int ran;
 
