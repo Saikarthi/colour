@@ -165,7 +165,7 @@ public class col : MonoBehaviour
     }
     public void SpawnObject()
     {
-        cp = new Vector3(-1.043f, -0.08f, -0.45f);
+        cp = new Vector3(-1.043f, -0.08f, 1f);
         this.transform.position = cp;
         d.enabled = true;
     }
