@@ -7,7 +7,7 @@ public class col : MonoBehaviour
     public move d;
     public score sc;
     public matchange ma;
-    public int s,ga=5,da,sda,fds;
+    public int s,ga=5,da,sda,fds,asdf=1,mn;
     public Vector3 cp;
     float timer = 0;
     bool timerCheck = false;
@@ -18,9 +18,14 @@ public class col : MonoBehaviour
         if (timerCheck)
         {
             timer += Time.deltaTime;
-            //fds = (int)Math.Ceiling(timer);
-          //  Debug.Log(fds);
-            sc.sec.text = timer.ToString();
+            mn = (int)Math.Ceiling(timer);
+            //  Debug.Log(fds);
+            
+            if (asdf == 0)
+            {
+                mn = 0;
+            }
+            sc.sec.text = mn.ToString();
         
         }
        
@@ -29,7 +34,9 @@ public class col : MonoBehaviour
         {
             da = int.Parse(sc.a.text);
             sda = da + ga;
+           
             sc.a.text = sda.ToString();
+           
             timer = 0;
             Debug.Log(timer);
 
@@ -262,7 +269,7 @@ public class col : MonoBehaviour
             
             d.enabled = false;
 
-
+            asdf = 0;
             s = int.Parse(sc.a.text);
             Invoke("SpawnObject", 3);
             
@@ -270,6 +277,7 @@ public class col : MonoBehaviour
     }
     public void SpawnObject()
     {
+        asdf = 1;
         cp = new Vector3(-1.043f, -0.08f, 1f);
         this.transform.position = cp;
         d.enabled = true;
