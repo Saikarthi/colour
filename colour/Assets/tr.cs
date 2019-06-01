@@ -2,12 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class track : MonoBehaviour
+public class tr : MonoBehaviour
 {
-
     float timer = 0;
     bool timerCheck = false;
-  
+ 
 
     void Update()
     {
@@ -19,18 +18,21 @@ public class track : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.collider.tag == "rp")
+        if (collision.collider.tag == "rb")
         {
-           // timerCheck = true;
-           
+
+            timerCheck = true;
+            Debug.Log("!");
         }
     }
-    void OnCollisionExit(Collision col)
+    void OnCollisionExit(Collision collisionInfo)
     {
-        if (col.collider.tag == "rp")
+        if (collisionInfo.collider.tag == "rb")
         {
+
             timerCheck = false;
-          
+            Debug.Log("ka");
         }
+      
     }
 }

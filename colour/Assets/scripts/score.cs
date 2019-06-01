@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class score : MonoBehaviour
 {
-    public Text a;
+    public Text a,sec,dis;
     public int s;
     
     void Start()

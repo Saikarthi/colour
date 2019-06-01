@@ -10,7 +10,7 @@ public class matchange : MonoBehaviour
 
     void Start()
     {
-        InvokeRepeating("colourchange", 5.0f, 5.0f);
+        InvokeRepeating("colourchange", 10.0f, 10.0f);
         
     }
 
