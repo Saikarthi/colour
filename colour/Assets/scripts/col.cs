@@ -7,59 +7,59 @@ public class col : MonoBehaviour
     public move d;
     public score sc;
     public matchange ma;
-    public int s,ga=5,da,sda,fds,asdf=1,mn;
+    public int s, ga = 5, da, sda, fds, asdf = 1, mn;
     public Vector3 cp;
     float timer = 0;
     bool timerCheck = false;
 
     void Update()
     {
-       
+
         if (timerCheck)
         {
             timer += Time.deltaTime;
             mn = (int)Math.Ceiling(timer);
             //  Debug.Log(fds);
-            
+
             if (asdf == 0)
             {
                 mn = 0;
             }
             sc.sec.text = mn.ToString();
-        
+
         }
-       
+
 
         if (timer >= 3)
         {
             da = int.Parse(sc.a.text);
             sda = da + ga;
-           
+
             sc.a.text = sda.ToString();
-           
+
             timer = 0;
             Debug.Log(timer);
 
         }
-        
-            
-        
+
+
+
     }
     void OnCollisionExit(Collision collisionInfo)
     {
         if (collisionInfo.collider.tag == "gp")
         {
-           
+
             timer = 0;
 
-          
+
 
         }
         if (collisionInfo.collider.tag == "bp")
         {
-           
+
             timer = 0;
-           
+
         }
         if (collisionInfo.collider.tag == "rp")
         {
@@ -69,7 +69,7 @@ public class col : MonoBehaviour
 
 
         }
-       
+
 
 
     }
@@ -96,7 +96,7 @@ public class col : MonoBehaviour
         }
         if (collision.collider.tag == "rp")
         {
-           
+
             if (this.GetComponent<Renderer>().material.color == ma.mat[0].color)
             {
                 timerCheck = true;
@@ -143,7 +143,7 @@ public class col : MonoBehaviour
             }
             if (collision.collider.tag == "b")
             {
-                
+
 
 
                 int a = 50;
@@ -157,7 +157,7 @@ public class col : MonoBehaviour
             }
             if (collision.collider.tag == "g")
             {
-                
+
 
 
                 int a = 50;
@@ -176,7 +176,7 @@ public class col : MonoBehaviour
         {
             if (collision.collider.tag == "r")
             {
-                
+
 
                 int a = 50;
                 int b = int.Parse(sc.a.text);
@@ -188,7 +188,7 @@ public class col : MonoBehaviour
             }
             if (collision.collider.tag == "b")
             {
-               
+
 
 
                 int a = 10;
@@ -202,7 +202,7 @@ public class col : MonoBehaviour
             }
             if (collision.collider.tag == "g")
             {
-               
+
 
 
                 int a = 50;
@@ -220,7 +220,7 @@ public class col : MonoBehaviour
         {
             if (collision.collider.tag == "r")
             {
-                
+
 
                 int a = 50;
                 int b = int.Parse(sc.a.text);
@@ -232,7 +232,7 @@ public class col : MonoBehaviour
             }
             if (collision.collider.tag == "b")
             {
-                
+
 
 
                 int a = 50;
@@ -246,7 +246,7 @@ public class col : MonoBehaviour
             }
             if (collision.collider.tag == "g")
             {
-               
+
 
 
                 int a = 10;
@@ -266,13 +266,13 @@ public class col : MonoBehaviour
 
         if (collision.collider.tag == "g" || collision.collider.tag == "b" || collision.collider.tag == "r")
         {
-            
+
             d.enabled = false;
 
             asdf = 0;
             s = int.Parse(sc.a.text);
             Invoke("SpawnObject", 3);
-            
+
         }
     }
     public void SpawnObject()
