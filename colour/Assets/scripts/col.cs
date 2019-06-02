@@ -18,14 +18,15 @@ public class col : MonoBehaviour
         if (timerCheck)
         {
             timer += Time.deltaTime;
-            mn = (int)Math.Ceiling(timer);
+           // mn = (int)Math.Ceiling(timer);
             //  Debug.Log(fds);
 
             if (asdf == 0)
             {
-                mn = 0;
+                
+                timer = 0;
             }
-            sc.sec.text = mn.ToString();
+            sc.sec.text = timer.ToString();
 
         }
 
@@ -40,6 +41,11 @@ public class col : MonoBehaviour
             timer = 0;
             Debug.Log(timer);
 
+        }
+        mn = int.Parse(sc.a.text);
+        if (mn <= 0)
+        {
+            sc.a.text = 0.ToString();
         }
 
 
@@ -271,6 +277,7 @@ public class col : MonoBehaviour
 
             asdf = 0;
             s = int.Parse(sc.a.text);
+        
             Invoke("SpawnObject", 3);
 
         }
