@@ -19,7 +19,7 @@ public class move : MonoBehaviour
     {
         // r.AddForce(0, 0, sa * Time.deltaTime);
         //r.transform.Translate(Vector3.forward * Time.deltaTime*sa);
-        Vector3 newPosition = new Vector3(0, 0, 15f);
+        Vector3 newPosition = new Vector3(0, 0,10f);
         //transform.Translate(newPosition * Time.deltaTime);
         transform.position += newPosition * Time.deltaTime;
         if (Input.GetKey(KeyCode.A))
