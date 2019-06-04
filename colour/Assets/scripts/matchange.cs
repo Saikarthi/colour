@@ -6,6 +6,7 @@ public class matchange : MonoBehaviour
 {
     public Material[] mat;
     private int a;
+    public col daa;
     public int c=1;
 
     void Start()
@@ -38,10 +39,13 @@ public class matchange : MonoBehaviour
 
         if (this.GetComponent<Renderer>().material.color == mat[0].color)
         {
-
+           
+            
             a = Random.Range(0, 2);
 
             this.GetComponent<Renderer>().material.color = mat[a + 1].color;
+            
+            
 
 
         }
@@ -50,12 +54,19 @@ public class matchange : MonoBehaviour
             a = Random.Range(0, 2);
             if (a == 0)
             {
+                
                 this.GetComponent<Renderer>().material.color = mat[a].color;
+
+                
             }
             if (a == 1)
             {
+               
                 this.GetComponent<Renderer>().material.color = mat[a + 1].color;
+                
             }
+           
+            
 
 
 
@@ -64,6 +75,8 @@ public class matchange : MonoBehaviour
         {
             a = Random.Range(0, 2);
             this.GetComponent<Renderer>().material.color = mat[a].color;
+            
+            
 
 
         }

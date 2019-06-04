@@ -7,23 +7,23 @@ public class col : MonoBehaviour
     public move d;
     public score sc;
     public matchange ma;
-    public int s, ga = 5, da, sda, fds, asdf = 1, mn;
+    public int s, ga = 5, da, sda, fds, asdf = 1, mn,baa=0;
     public Vector3 cp;
-    float timer = 0;
-    bool timerCheck = false;
+ //  public float timer = 0;
+  // public bool timerCheck = false;
 
     void Update()
     {
 
-        if (timerCheck)
+       /* if (timerCheck)
         {
             timer += Time.deltaTime;
-           // mn = (int)Math.Ceiling(timer);
+            // mn = (int)Math.Ceiling(timer);
             //  Debug.Log(fds);
 
             if (asdf == 0)
             {
-                
+
                 timer = 0;
             }
             sc.sec.text = timer.ToString();
@@ -41,7 +41,7 @@ public class col : MonoBehaviour
             timer = 0;
             Debug.Log(timer);
 
-        }
+        }*/
         mn = int.Parse(sc.a.text);
         if (mn <= 0)
         {
@@ -51,7 +51,11 @@ public class col : MonoBehaviour
 
 
     }
-    void OnCollisionExit(Collision collisionInfo)
+
+
+
+
+    /*void OnCollisionExit(Collision collisionInfo)
     {
         if (collisionInfo.collider.tag == "gp")
         {
@@ -78,12 +82,12 @@ public class col : MonoBehaviour
 
 
 
-    }
+    }*/
 
     void OnCollisionEnter(Collision collision)
     {
 
-        if (collision.collider.tag == "gp")
+       /* if (collision.collider.tag == "gp")
         {
 
             if (this.GetComponent<Renderer>().material.color == ma.mat[0].color)
@@ -131,7 +135,7 @@ public class col : MonoBehaviour
             {
                 timerCheck = false;
             }
-        }
+        }*/
 
         if (ma.c == 1)
         {
@@ -275,16 +279,17 @@ public class col : MonoBehaviour
 
             d.enabled = false;
 
-            asdf = 0;
+           // asdf = 0;
             s = int.Parse(sc.a.text);
-        
+
             Invoke("SpawnObject", 3);
 
         }
     }
     public void SpawnObject()
     {
-        asdf = 1;
+        baa = int.Parse(sc.dis.text);
+      //  asdf = 1;
         cp = new Vector3(-1.043f, -0.08f, 1f);
         this.transform.position = cp;
         d.enabled = true;
