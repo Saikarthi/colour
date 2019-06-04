@@ -15,21 +15,24 @@ public class move : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         // r.AddForce(0, 0, sa * Time.deltaTime);
         //r.transform.Translate(Vector3.forward * Time.deltaTime*sa);
-        Vector3 newPosition = new Vector3(0, 0,10f);
+        Vector3 newPosition = new Vector3(0, 0,12f);
         //transform.Translate(newPosition * Time.deltaTime);
         transform.position += newPosition * Time.deltaTime;
-        if (Input.GetKey(KeyCode.A))
-        {
-            r.AddForce(-fa * Time.deltaTime, 0, 0,ForceMode.VelocityChange);
-        }
-        if (Input.GetKey(KeyCode.D))
-        {
-            r.AddForce(fa* Time.deltaTime, 0, 0, ForceMode.VelocityChange);
-        }
+         if (Input.GetKey(KeyCode.A))
+          {
+              r.AddForce(-fa * Time.deltaTime, 0, 0,ForceMode.VelocityChange);
+          }
+          if (Input.GetKey(KeyCode.D))
+          {
+              r.AddForce(fa* Time.deltaTime, 0, 0, ForceMode.VelocityChange);
+          }
+        float tilt = Input.acceleration.x;
+        Debug.Log(tilt);
+        transform.position += new Vector3(tilt/5,0,0);
 
     }
 }

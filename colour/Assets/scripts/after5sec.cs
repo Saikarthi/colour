@@ -11,11 +11,13 @@ public class after5sec : MonoBehaviour
     public move e;
     void Start()
     {
+      
         a.enabled = false;
         b.enabled = false;
         c.enabled = false;
         d.enabled = false;
         e.enabled = false;
+
 
         Invoke("insec", 2);
     }
