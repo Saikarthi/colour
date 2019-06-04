@@ -6,42 +6,45 @@ public class col : MonoBehaviour
 {
     public move d;
     public score sc;
+    public Transform pa;
     public matchange ma;
-    public int s, ga = 5, da, sda, fds, asdf = 1, mn,baa=0;
+    public track fg;
+    public int s, ga, da, sda, fds, asdf = 1, mn;
+    public float baa = 0,caa;
     public Vector3 cp;
- //  public float timer = 0;
-  // public bool timerCheck = false;
+    //  public float timer = 0;
+    // public bool timerCheck = false;
 
     void Update()
     {
 
-       /* if (timerCheck)
-        {
-            timer += Time.deltaTime;
-            // mn = (int)Math.Ceiling(timer);
-            //  Debug.Log(fds);
+        /* if (timerCheck)
+         {
+             timer += Time.deltaTime;
+             // mn = (int)Math.Ceiling(timer);
+             //  Debug.Log(fds);
 
-            if (asdf == 0)
-            {
+             if (asdf == 0)
+             {
 
-                timer = 0;
-            }
-            sc.sec.text = timer.ToString();
+                 timer = 0;
+             }
+             sc.sec.text = timer.ToString();
 
-        }
+         }
 
 
-        if (timer >= 3)
-        {
-            da = int.Parse(sc.a.text);
-            sda = da + ga;
+         if (timer >= 3)
+         {
+             da = int.Parse(sc.a.text);
+             sda = da + ga;
 
-            sc.a.text = sda.ToString();
+             sc.a.text = sda.ToString();
 
-            timer = 0;
-            Debug.Log(timer);
+             timer = 0;
+             Debug.Log(timer);
 
-        }*/
+         }*/
         mn = int.Parse(sc.a.text);
         if (mn <= 0)
         {
@@ -87,55 +90,55 @@ public class col : MonoBehaviour
     void OnCollisionEnter(Collision collision)
     {
 
-       /* if (collision.collider.tag == "gp")
-        {
+        /* if (collision.collider.tag == "gp")
+         {
 
-            if (this.GetComponent<Renderer>().material.color == ma.mat[0].color)
-            {
-                timerCheck = false;
-            }
-            if (this.GetComponent<Renderer>().material.color == ma.mat[1].color)
-            {
-                timerCheck = false;
-            }
-            if (this.GetComponent<Renderer>().material.color == ma.mat[2].color)
-            {
-                timerCheck = true;
-            }
+             if (this.GetComponent<Renderer>().material.color == ma.mat[0].color)
+             {
+                 timerCheck = false;
+             }
+             if (this.GetComponent<Renderer>().material.color == ma.mat[1].color)
+             {
+                 timerCheck = false;
+             }
+             if (this.GetComponent<Renderer>().material.color == ma.mat[2].color)
+             {
+                 timerCheck = true;
+             }
 
-        }
-        if (collision.collider.tag == "rp")
-        {
+         }
+         if (collision.collider.tag == "rp")
+         {
 
-            if (this.GetComponent<Renderer>().material.color == ma.mat[0].color)
-            {
-                timerCheck = true;
-            }
-            if (this.GetComponent<Renderer>().material.color == ma.mat[1].color)
-            {
-                timerCheck = false;
-            }
-            if (this.GetComponent<Renderer>().material.color == ma.mat[2].color)
-            {
-                timerCheck = false;
-            }
-        }
-        if (collision.collider.tag == "bp")
-        {
+             if (this.GetComponent<Renderer>().material.color == ma.mat[0].color)
+             {
+                 timerCheck = true;
+             }
+             if (this.GetComponent<Renderer>().material.color == ma.mat[1].color)
+             {
+                 timerCheck = false;
+             }
+             if (this.GetComponent<Renderer>().material.color == ma.mat[2].color)
+             {
+                 timerCheck = false;
+             }
+         }
+         if (collision.collider.tag == "bp")
+         {
 
-            if (this.GetComponent<Renderer>().material.color == ma.mat[0].color)
-            {
-                timerCheck = false;
-            }
-            if (this.GetComponent<Renderer>().material.color == ma.mat[1].color)
-            {
-                timerCheck = true;
-            }
-            if (this.GetComponent<Renderer>().material.color == ma.mat[2].color)
-            {
-                timerCheck = false;
-            }
-        }*/
+             if (this.GetComponent<Renderer>().material.color == ma.mat[0].color)
+             {
+                 timerCheck = false;
+             }
+             if (this.GetComponent<Renderer>().material.color == ma.mat[1].color)
+             {
+                 timerCheck = true;
+             }
+             if (this.GetComponent<Renderer>().material.color == ma.mat[2].color)
+             {
+                 timerCheck = false;
+             }
+         }*/
 
         if (ma.c == 1)
         {
@@ -279,20 +282,26 @@ public class col : MonoBehaviour
 
             d.enabled = false;
 
-           // asdf = 0;
-            s = int.Parse(sc.a.text);
-
+            // asdf = 0;
+           // s = int.Parse(sc.a.text);
+            fg.enabled = false;
+            caa= pa.position.z;
             Invoke("SpawnObject", 3);
 
         }
     }
     public void SpawnObject()
     {
-        baa = int.Parse(sc.dis.text);
-      //  asdf = 1;
+        
+        //  asdf = 1;
         cp = new Vector3(-1.043f, -0.08f, 1f);
         this.transform.position = cp;
+        score23();
+        fg.enabled = true;
         d.enabled = true;
     }
-
+    public void score23()
+    {
+        baa += caa;
+    }
 }

@@ -9,6 +9,7 @@ public class score : MonoBehaviour
     public int s;
     public Transform p;
     public col daa;
+    public float ab;
 
     void Start()
     {
@@ -20,7 +21,7 @@ public class score : MonoBehaviour
     
     void Update()
     {
-        float ab = p.position.z;
+        ab = p.position.z+daa.baa;
         dis.text = ab.ToString("0");
     }
     
