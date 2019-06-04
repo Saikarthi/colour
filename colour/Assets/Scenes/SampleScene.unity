@@ -1236,7 +1236,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 1000
+  m_Text: 0
 --- !u!222 &604686618
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1575,7 +1575,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 1000
+  m_Text: 100
 --- !u!222 &829474784
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1927,8 +1927,9 @@ GameObject:
   - component: {fileID: 1380854310}
   - component: {fileID: 1380854309}
   - component: {fileID: 1380854314}
-  - component: {fileID: 1380854315}
   - component: {fileID: 1380854317}
+  - component: {fileID: 1380854319}
+  - component: {fileID: 1380854315}
   - component: {fileID: 1380854316}
   - component: {fileID: 1380854318}
   - component: {fileID: 1380854313}
@@ -2057,7 +2058,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   d: {fileID: 1380854314}
   sc: {fileID: 1380854317}
+  pa: {fileID: 1380854312}
   ma: {fileID: 1380854316}
+  fg: {fileID: 1380854318}
   s: 0
   ga: 5
   da: 0
@@ -2066,6 +2069,7 @@ MonoBehaviour:
   asdf: 1
   mn: 0
   baa: 0
+  caa: 0
   cp: {x: 0, y: 0, z: 0}
 --- !u!114 &1380854316
 MonoBehaviour:
@@ -2103,6 +2107,7 @@ MonoBehaviour:
   s: 0
   p: {fileID: 1380854312}
   daa: {fileID: 1380854315}
+  ab: 0
 --- !u!114 &1380854318
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2120,6 +2125,23 @@ MonoBehaviour:
   da: 0
   sda: 0
   ga: 1
+--- !u!114 &1380854319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1380854308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d103de667ffa234f8482b7624ba99a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  a: {fileID: 1380854316}
+  b: {fileID: 1380854318}
+  c: {fileID: 1380854315}
+  d: {fileID: 1380854317}
+  e: {fileID: 1380854314}
 --- !u!1 &1442616034
 GameObject:
   m_ObjectHideFlags: 0

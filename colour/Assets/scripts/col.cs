@@ -288,7 +288,7 @@ public class col : MonoBehaviour
             caa= pa.position.z;
             Invoke("SpawnObject", 3);
 
-        }
+        } 
     }
     public void SpawnObject()
     {
