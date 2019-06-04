@@ -11,7 +11,7 @@ public class after5sec : MonoBehaviour
     public move e;
     void Start()
     {
-      
+        Screen.sleepTimeout = SleepTimeout.NeverSleep;
         a.enabled = false;
         b.enabled = false;
         c.enabled = false;
