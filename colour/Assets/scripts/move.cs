@@ -6,7 +6,7 @@ public class move : MonoBehaviour
 {
     public Vector3 a= Vector3.zero;
     public float fa = 250f;
-    public float sa = 5f;
+    public float sa = 12f;
     public Rigidbody r;
     void Start()
     {
@@ -18,7 +18,7 @@ public class move : MonoBehaviour
     {
         // r.AddForce(0, 0, sa * Time.deltaTime);
         //r.transform.Translate(Vector3.forward * Time.deltaTime*sa);
-        Vector3 newPosition = new Vector3(0, 0,12f);
+        Vector3 newPosition = new Vector3(0, 0,sa);
         //transform.Translate(newPosition * Time.deltaTime);
         transform.position += newPosition * Time.deltaTime;
          if (Input.GetKey(KeyCode.A))
