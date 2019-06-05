@@ -31,7 +31,7 @@ public class move : MonoBehaviour
               r.AddForce(fa* Time.deltaTime, 0, 0, ForceMode.VelocityChange);
           }
         float tilt = Input.acceleration.x;
-        Debug.Log(tilt);
+       
         transform.position += new Vector3(tilt/5,0,0);
 
     }

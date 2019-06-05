@@ -24,5 +24,6 @@ public class score : MonoBehaviour
         ab = p.position.z+daa.baa;
         dis.text = ab.ToString("0");
     }
-    
+   
+
 }

@@ -1,6 +1,7 @@
 ﻿using UnityEngine.SceneManagement;
 using UnityEngine;
 using System;
+using UnityEngine.UI;
 
 public class col : MonoBehaviour
 {
@@ -9,7 +10,8 @@ public class col : MonoBehaviour
     public Transform pa;
     public matchange ma;
     public track fg;
-    public int s, ga, da, sda, fds, asdf = 1, mn;
+ 
+    public int s, ga, da, sda, fds, asdf = 1;
     public float baa = 0,caa;
     public Vector3 cp;
     //  public float timer = 0;
@@ -45,11 +47,7 @@ public class col : MonoBehaviour
              Debug.Log(timer);
 
          }*/
-        mn = int.Parse(sc.a.text);
-        if (mn <= 0)
-        {
-            sc.a.text = 0.ToString();
-        }
+       
 
 
 
