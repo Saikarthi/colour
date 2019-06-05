@@ -8,13 +8,12 @@ public class move : MonoBehaviour
     public float fa = 250f;
     public float sa = 5f;
     public Rigidbody r;
-    // Start is called before the first frame update
     void Start()
     {
         
     }
 
-    // Update is called once per frame
+    
     void FixedUpdate()
     {
         // r.AddForce(0, 0, sa * Time.deltaTime);

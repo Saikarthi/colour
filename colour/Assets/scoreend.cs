@@ -14,13 +14,13 @@ public class scoreend : MonoBehaviour
     public col c;
     public score d;
     public move e;
-    // Start is called before the first frame update
+    
     void Start()
     {
 
     }
 
-    // Update is called once per frame
+  
     void Update()
     {
 

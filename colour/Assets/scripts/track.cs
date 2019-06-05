@@ -26,7 +26,7 @@ public class track : MonoBehaviour
             sc1.a.text = sda.ToString();
 
             timer = 0;
-            Debug.Log(timer);
+            
 
         }
     }
