@@ -7,7 +7,7 @@ public class scoreend : MonoBehaviour
 {
     public score sc;
     public Text avm;
-    public int mn;
+    public int mn,gada=0,ha;
     public GameObject avm1;
     public matchange a;
     public track b;
@@ -32,10 +32,12 @@ public class scoreend : MonoBehaviour
             c.enabled = false;
             d.enabled = false;
             e.enabled = false;
+            gada = 1;
             sc.a.text = 0.ToString();
             avm1.SetActive(true);
             avm.text = sc.dis.text;
-
+            ha = int.Parse(avm.text);
+           
         }
     }
     

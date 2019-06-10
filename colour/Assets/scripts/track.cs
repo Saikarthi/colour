@@ -9,7 +9,7 @@ public class track : MonoBehaviour
     bool timerCheck = false;
     public score sc1;
     public matchange ma1;
-    public int da, sda, ga = 1;
+    public int da, sda, ga = 10;
 
     void Update()
     {
