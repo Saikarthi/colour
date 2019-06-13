@@ -283,6 +283,7 @@ public class col : MonoBehaviour
             // asdf = 0;
            // s = int.Parse(sc.a.text);
             fg.enabled = false;
+            ma.enabled = false;
             caa= pa.position.z;
             Invoke("SpawnObject", 3);
 
@@ -296,6 +297,7 @@ public class col : MonoBehaviour
         this.transform.position = cp;
         score23();
         fg.enabled = true;
+        ma.enabled = true;
         d.enabled = true;
     }
     public void score23()

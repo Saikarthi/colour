@@ -13,7 +13,7 @@ public class endless : MonoBehaviour
 
     void Start()
     {
-        
+        spawntile(1);
     }
 
    
@@ -29,9 +29,19 @@ public class endless : MonoBehaviour
     {
         GameObject go;
         ran = Random.Range(0, 6);
-        go = Instantiate(tileprefab[ran]) as GameObject;
-        go.transform.SetParent(transform);
-        go.transform.position = Vector3.forward * spawnZ;
-        spawnZ += tilelength;
+        if (prefabindex == 1)
+        {
+            go = Instantiate(tileprefab[7]) as GameObject;
+            go.transform.SetParent(transform);
+            go.transform.position = Vector3.forward * spawnZ;
+            spawnZ += tilelength;
+        }
+        else
+        {
+            go = Instantiate(tileprefab[ran]) as GameObject;
+            go.transform.SetParent(transform);
+            go.transform.position = Vector3.forward * spawnZ;
+            spawnZ += tilelength;
+        }
     }
 }

@@ -31,7 +31,7 @@ public class move : MonoBehaviour
           }
         float tilt = Input.acceleration.x;
        
-        transform.position += new Vector3(tilt/5,0,0);
+        transform.position += new Vector3(tilt/25,0,0);
 
     }
 }
