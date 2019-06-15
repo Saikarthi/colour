@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class main : MonoBehaviour
 {
-    // Start is called before the first frame update
+  
     void Start()
     {
         Cloud.OnInitializeComplete += CloudOnceInitializeComplete;
@@ -20,7 +20,6 @@ public class main : MonoBehaviour
 
     }
 
-    // Update is called once per frame
     void Update()
     {
         
