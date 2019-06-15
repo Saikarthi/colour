@@ -13,6 +13,7 @@ TagManager:
   - bp
   - rp
   - gp
+  - music
   layers:
   - Default
   - TransparentFX
