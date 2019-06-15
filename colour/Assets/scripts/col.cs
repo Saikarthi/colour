@@ -180,7 +180,7 @@ public class col : MonoBehaviour
     {
         
 
-        cp = new Vector3(-1.043f, -0.08f, 1f);
+        cp = new Vector3(-1.043f, -0.08f, 44.36f);
         this.transform.position = cp;
         score23();
         fg.enabled = true;
