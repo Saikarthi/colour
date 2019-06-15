@@ -7,7 +7,7 @@ public class scoreend : MonoBehaviour
 {
     public score sc;
     public Text avm;
-    public int mn,gada=0,ha;
+    public int mn=0,gada=0,ha;
     public GameObject avm1;
     public matchange a;
     public track b;

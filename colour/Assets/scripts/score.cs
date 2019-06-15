@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class score : MonoBehaviour
 {
     public Text a,sec,dis;
+    public int pur=0;
+    public int asd;
     public int s;
     public Transform p;
     public col daa;
@@ -13,7 +15,9 @@ public class score : MonoBehaviour
 
     void Start()
     {
-        a.text = 100.ToString();
+        pur = PlayerPrefs.GetInt("purmain");
+        asd = 100 + pur;
+        a.text = asd.ToString();
         
 
     }
@@ -23,6 +27,8 @@ public class score : MonoBehaviour
     {
         ab = p.position.z+daa.baa;
         dis.text = ab.ToString("0");
+        
+       // DontDestroyOnLoad(GameObject.find)
     }
    
 
