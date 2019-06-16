@@ -26,6 +26,7 @@ public class score : MonoBehaviour
     void Update()
     {
         ab = p.position.z+daa.baa;
+      
         dis.text = ab.ToString("0");
         
        // DontDestroyOnLoad(GameObject.find)
