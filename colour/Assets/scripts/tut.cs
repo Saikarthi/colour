@@ -8,18 +8,10 @@ public class tut : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       if (PlayerPrefs.GetInt("FIRSTTIMEOPENING", 1) == 1)
-        {
-            Debug.Log("First Time Opening");
+       
             a.SetActive(true);
             Invoke("adad", 5);
-            
-
-           PlayerPrefs.SetInt("FIRSTTIMEOPENING", 0);
-
-            //Do your stuff here
-
-       }
+       
     }
     public void adad()
     {
