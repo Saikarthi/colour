@@ -15,8 +15,8 @@ public class score : MonoBehaviour
 
     void Start()
     {
-        pur = PlayerPrefs.GetInt("purmain");
-        asd = 100 + pur;
+
+        asd = 100;
         a.text = asd.ToString();
         
 

@@ -8,10 +8,7 @@ public class move : MonoBehaviour
     public float fa = 250f;
     public float sa = 12f;
     public Rigidbody r;
-    void Start()
-    {
-        
-    }
+
 
     
     void FixedUpdate()

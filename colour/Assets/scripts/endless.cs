@@ -28,7 +28,7 @@ public class endless : MonoBehaviour
     void spawntile(int prefabindex = -1)
     {
         GameObject go;
-        ran = Random.Range(0, 6);
+        ran = Random.Range(1, 6);
         if (prefabindex == 1)
         {
             go = Instantiate(tileprefab[7]) as GameObject;
