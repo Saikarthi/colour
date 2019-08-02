@@ -491,7 +491,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   a: {x: 0, y: 0, z: 0}
-  fa: 15
+  fa: 27.3
   sa: 12
   r: {fileID: 282275048}
 --- !u!135 &282275056
