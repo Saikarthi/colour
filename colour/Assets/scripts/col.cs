@@ -172,7 +172,7 @@ public class col : MonoBehaviour
             fg.enabled = false;
             ma.enabled = false;
             caa= pa.position.z;
-            Invoke("SpawnObject", 3);
+            Invoke("SpawnObject", 0.5f);
 
         } 
     }
@@ -180,7 +180,7 @@ public class col : MonoBehaviour
     {
         
 
-        cp = new Vector3(-1.043f, -0.08f, 44.36f);
+        cp = new Vector3(-1.043f, -0.08f, 30.36f);
         this.transform.position = cp;
         score23();
         fg.enabled = true;
