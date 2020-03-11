@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class scoreend : MonoBehaviour
@@ -37,8 +38,18 @@ public class scoreend : MonoBehaviour
             avm1.SetActive(true);
             avm.text = sc.dis.text;
             ha = int.Parse(avm.text);
+            Invoke("adad", 3);
            
+
+
         }
+
     }
-    
+    public void adad()
+    {
+        SceneManager.LoadScene(0);
+
+
+    }
+
 }

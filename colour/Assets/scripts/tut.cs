@@ -8,14 +8,14 @@ public class tut : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       
-            a.SetActive(true);
-            Invoke("adad", 5);
-       
+
+        a.SetActive(true);
+        Invoke("adad", 5);
+
     }
     public void adad()
     {
-        
+
         a.SetActive(false);
         b.SetActive(true);
         Invoke("adad1", 5);
@@ -25,7 +25,7 @@ public class tut : MonoBehaviour
     {
         SceneManager.LoadScene(2);
 
-       
+
 
     }
 }

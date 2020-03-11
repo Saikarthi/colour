@@ -22,7 +22,7 @@ public class main : MonoBehaviour
 
         PlayerPrefs.SetInt("FIRSTTIMEOPENING", 0);
 
-            //Do your stuff here
+           
 
         }
         else
