@@ -15,20 +15,9 @@ public class main : MonoBehaviour
     }
     public void start()
     {
-        if (PlayerPrefs.GetInt("FIRSTTIMEOPENING", 1) == 1)
-        {
+
             SceneManager.LoadScene(1);
-        
-
-        PlayerPrefs.SetInt("FIRSTTIMEOPENING", 0);
-
-           
-
-        }
-        else
-        {
-            SceneManager.LoadScene(1);
-        }
+      
 
  
 
