@@ -11,24 +11,24 @@ public class matchange : MonoBehaviour
 
     void Start()
     {
-        InvokeRepeating("colourchange", 10.0f, 10.0f);
+        InvokeRepeating("colourchange", 5.0f, 5.0f);
         
     }
 
 
     void Update()
     {  //for score
-        if (this.GetComponent<Renderer>().material.color == mat[0].color)
+        if (this.GetComponent<Renderer>().material== mat[0])
         {
             c = 1;
             
         }
-        if (this.GetComponent<Renderer>().material.color == mat[1].color)
+        if (this.GetComponent<Renderer>().material== mat[1])
         {
             c = 2;
            
         }
-        if (this.GetComponent<Renderer>().material.color == mat[2].color)
+        if (this.GetComponent<Renderer>().material == mat[2])
         {
             c = 3;
           
@@ -37,32 +37,32 @@ public class matchange : MonoBehaviour
     void colourchange()
     {
 
-        if (this.GetComponent<Renderer>().material.color == mat[0].color)
+        if (this.GetComponent<Renderer>().material == mat[0])
         {
            
             
             a = Random.Range(0, 2);
 
-            this.GetComponent<Renderer>().material.color = mat[a + 1].color;
+            this.GetComponent<Renderer>().material = mat[a + 1];
             
             
 
 
         }
-        else if (this.GetComponent<Renderer>().material.color == mat[1].color)
+        else if (this.GetComponent<Renderer>().material == mat[1])
         {
             a = Random.Range(0, 2);
             if (a == 0)
             {
                 
-                this.GetComponent<Renderer>().material.color = mat[a].color;
+                this.GetComponent<Renderer>().material = mat[a];
 
                 
             }
             if (a == 1)
             {
                
-                this.GetComponent<Renderer>().material.color = mat[a + 1].color;
+                this.GetComponent<Renderer>().material = mat[a + 1];
                 
             }
            
@@ -71,10 +71,10 @@ public class matchange : MonoBehaviour
 
 
         }
-        else if (this.GetComponent<Renderer>().material.color == mat[2].color)
+        else if (this.GetComponent<Renderer>().material == mat[2])
         {
             a = Random.Range(0, 2);
-            this.GetComponent<Renderer>().material.color = mat[a].color;
+            this.GetComponent<Renderer>().material = mat[a];
             
             
 

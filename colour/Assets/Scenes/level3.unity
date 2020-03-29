@@ -687,7 +687,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 282275046}
-  - component: {fileID: 282275058}
   - component: {fileID: 282275057}
   - component: {fileID: 282275056}
   - component: {fileID: 282275055}
@@ -698,6 +697,7 @@ GameObject:
   - component: {fileID: 282275049}
   - component: {fileID: 282275048}
   - component: {fileID: 282275047}
+  - component: {fileID: 282275054}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -713,8 +713,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 282275045}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.043, y: -0.08, z: 3.322}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
+  m_LocalPosition: {x: -1.043, y: -0.08, z: 45}
+  m_LocalScale: {x: 0.04, y: 0.04, z: 0.04}
   m_Children:
   - {fileID: 1938996174}
   m_Father: {fileID: 0}
@@ -852,6 +852,14 @@ MonoBehaviour:
   c: {fileID: 282275051}
   d: {fileID: 1245699330}
   e: {fileID: 282275055}
+--- !u!33 &282275054
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 282275045}
+  m_Mesh: {fileID: 4300008, guid: e0f90ad78680d6145b082ac69f7fc504, type: 3}
 --- !u!114 &282275055
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -918,14 +926,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &282275058
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 282275045}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &307032685
 GameObject:
   m_ObjectHideFlags: 0
@@ -3272,7 +3272,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 2
-  m_Color: {r: 0.8901961, g: 0.78039217, b: 0.21568628, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
   m_Range: 1.018547
   m_SpotAngle: 30
@@ -3404,7 +3404,7 @@ GameObject:
   - component: {fileID: 2067427501}
   - component: {fileID: 2067427500}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: music
   m_TagString: music
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

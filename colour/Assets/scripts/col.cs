@@ -31,7 +31,7 @@ public class col : MonoBehaviour
           
             if (collision.collider.tag == "r")
             {
-
+                Debug.Log("11111");
                 int a = 10;
                 int b = int.Parse(sc.a.text);
           
