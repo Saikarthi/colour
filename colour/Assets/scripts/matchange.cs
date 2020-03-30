@@ -11,7 +11,7 @@ public class matchange : MonoBehaviour
 
     void Start()
     {
-        InvokeRepeating("colourchange", 5.0f, 5.0f);
+        InvokeRepeating("colourchange", 2.0f, 2.0f);
         
     }
 
@@ -75,7 +75,8 @@ public class matchange : MonoBehaviour
         {
             a = Random.Range(0, 2);
             this.GetComponent<Renderer>().material = mat[a];
-            
+               
+
             
 
 
