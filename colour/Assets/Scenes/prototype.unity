@@ -697,8 +697,6 @@ GameObject:
   - component: {fileID: 282275049}
   - component: {fileID: 282275048}
   - component: {fileID: 282275047}
-  - component: {fileID: 282275059}
-  - component: {fileID: 282275058}
   - component: {fileID: 282275056}
   m_Layer: 0
   m_Name: Sphere
@@ -748,11 +746,11 @@ Rigidbody:
   m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 0
+  m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 124
-  m_CollisionDetection: 1
+  m_CollisionDetection: 3
 --- !u!114 &282275049
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -907,19 +905,20 @@ MonoBehaviour:
   fa: 27.3
   sa: 12
   r: {fileID: 282275048}
---- !u!65 &282275056
-BoxCollider:
+--- !u!64 &282275056
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 282275045}
-  m_Material: {fileID: 13400000, guid: 8e8f472ba73551c45a8c458e2b7cefa2, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 5.6188416, y: 3.256053, z: 5.8013916}
-  m_Center: {x: 4.0099964, y: -0.00000074505806, z: -2.5245667}
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300008, guid: e0f90ad78680d6145b082ac69f7fc504, type: 3}
 --- !u!33 &282275057
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -928,32 +927,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 282275045}
   m_Mesh: {fileID: 4300008, guid: e0f90ad78680d6145b082ac69f7fc504, type: 3}
---- !u!65 &282275058
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 282275045}
-  m_Material: {fileID: 13400000, guid: 8e8f472ba73551c45a8c458e2b7cefa2, type: 2}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 5.2732754, y: 3.256053, z: 5.7016754}
-  m_Center: {x: -4.1827774, y: -0.00000074505806, z: -2.5744247}
---- !u!65 &282275059
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 282275045}
-  m_Material: {fileID: 13400000, guid: 8e8f472ba73551c45a8c458e2b7cefa2, type: 2}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2.7319643, y: 3.256053, z: 10.905304}
-  m_Center: {x: -0.17611638, y: -0.00000074505806, z: 0.027389526}
 --- !u!1 &307032685
 GameObject:
   m_ObjectHideFlags: 0
