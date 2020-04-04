@@ -15,10 +15,7 @@ public class col : MonoBehaviour
     public float baa = 0,caa;
     public Vector3 cp;
 
-    void Update()
-    {
-        
-    }
+  
 
 
 
