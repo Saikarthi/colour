@@ -14,12 +14,15 @@ public class col : MonoBehaviour
     public int s, ga, da, sda, fds, asdf = 1;
     public float baa = 0,caa;
     public Vector3 cp;
- 
+
+    void Update()
+    {
+        
+    }
 
 
 
 
-    
 
     void OnCollisionEnter(Collision collision)
     {
