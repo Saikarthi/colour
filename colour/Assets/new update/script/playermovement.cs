@@ -8,7 +8,7 @@ public class playermovement : MonoBehaviour
     public float fa = 250f;
     public float sa = 12f;
     public Rigidbody r;
-    void Update()
+    void FixedUpdate()
     {
         Vector3 newPosition = new Vector3(0, 0, sa);
 
